@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+    <fullyQualifiedTypeName name="pres.quan.opp.exer.EnhanceObjArraTest"/>
+    <fullyQualifiedTypeName name="javax.swing.text.View"/>
+    <fullyQualifiedTypeName name="pers.quan.preject2.Customer"/>
+    <fullyQualifiedTypeName name="pers.quan.preject2.CustomerList"/>
+    <fullyQualifiedTypeName name="customer.Customer"/>
+    <fullyQualifiedTypeName name="customerList.CustomerList"/>
+    <fullyQualifiedTypeName name="util.CMUtility"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.comp.Check"/>
+    <fullyQualifiedTypeName name="java.lang.VerifyError"/>
+    <fullyQualifiedTypeName name="pers.quan.opp.test.InteriorTest.Demo"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="pers.quan.opp.innerClassLearn.Person"/>
+    <fullyQualifiedTypeName name="pers.quan.opp.innerClassLearn.Person.Dog"/>
+    <fullyQualifiedTypeName name="pers.quan.opp.innerClassLearn.Person.Loong"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="pers.quan.domain.Employee"/>
+    <fullyQualifiedTypeName name="pers.quan.service.NameListService"/>
+    <fullyQualifiedTypeName name="pers.quan.service.TeamService"/>
+    <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputFilter.Status"/>
+    <fullyQualifiedTypeName name="pers.quan.service.Status"/>
+    <fullyQualifiedTypeName name="pers.quan.domain.Programmer"/>
+    <fullyQualifiedTypeName name="pers.quan.domain.NetBook"/>
+    <fullyQualifiedTypeName name="pers.quan.domain.Pc"/>
+    <fullyQualifiedTypeName name="pers.quan.domain.Equipment"/>
+    <fullyQualifiedTypeName name="pers.quan.domain.Designer"/>
+    <fullyQualifiedTypeName name="pers.quan.domain.Architect"/>
+    <fullyQualifiedTypeName name="pers.quan.util.Data"/>
+    <fullyQualifiedTypeName name="pers.quan.util.TSUtility"/>
+    <fullyQualifiedTypeName name="pers.quan.customException.TeamException"/>
+</qualifiedTypeNameHistroy>

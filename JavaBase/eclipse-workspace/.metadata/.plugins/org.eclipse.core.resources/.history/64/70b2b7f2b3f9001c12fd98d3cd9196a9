@@ -1,0 +1,9 @@
+package pers.quan.domain;
+
+
+// …Ëº∆ ¶
+public class Designer extends Programmer {
+	public Designer(int id, String name, int age, double salary) {
+		super(id, name, age, salary);
+	} 
+}

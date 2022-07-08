@@ -1,0 +1,80 @@
+package pers.quan.domain;
+
+public interface Equipment {
+	String Description = "";
+	public abstract String getDescription(String Description);
+}
+
+/*
+ * model:型号
+ * display:显示器名称
+ * type 表示机器的类型
+ */
+
+
+class Pc {
+	private String model; 
+	private String display;
+	public Pc(String model, String display) {
+		this.model = model;
+		this.display = display;
+	}
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public String getDisplay() {
+		return display;
+	}
+	public void setDisplay(String display) {
+		this.display = display;
+	}
+	
+}
+
+class NeteBook {
+	private String model;
+	private double price;
+	public NeteBook(String model,double price) {
+		this.model = model;
+		this.price = price;
+	}
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+}
+
+class Printer {
+	private String name;
+	private String type;
+	public Printer(String name,String type) {
+		this.name = name;
+		this.type = type;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	
+}

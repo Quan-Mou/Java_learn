@@ -1,0 +1,20 @@
+package pers.quan.exception;
+
+public class ExceptionTest {
+	public static void main(String[] args) {
+		try {
+			int[] arr = new int[2];
+			System.out.println(arr[2]);
+			System.out.println("后续");
+		}catch(IndexOutOfBoundsException e) {
+			System.out.println("越界访问");
+			System.out.println(e);
+		}catch(NullPointerException e) {
+			System.out.println("空指针");
+		}
+		
+		System.out.println("结果");
+		
+		
+	}
+}

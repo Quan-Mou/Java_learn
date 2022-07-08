@@ -1,0 +1,10 @@
+package pers.quan.service;
+
+public class Status {
+	private final String NAME;
+	public Status(String NAME) {
+		this.NAME = NAME;
+	}
+	public static final String FREE = new Status("FREE"); // ±Ì æø’œ–
+	
+}

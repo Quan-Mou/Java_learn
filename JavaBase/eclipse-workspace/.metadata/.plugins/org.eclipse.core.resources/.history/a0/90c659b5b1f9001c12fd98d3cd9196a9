@@ -1,0 +1,8 @@
+package pers.quan.service;
+
+public class Status {
+	private final String NAME;
+	public Status(String NAME) {
+		this.NAME = NAME;
+	}
+}

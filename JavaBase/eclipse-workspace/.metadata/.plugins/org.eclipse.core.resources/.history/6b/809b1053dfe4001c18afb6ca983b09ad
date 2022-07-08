@@ -1,0 +1,33 @@
+package pers.quan.opp.test3;
+
+public class SingletonTest1 {
+	// 单例模式：保证这个类中只有一个对象
+	
+	public static void main(String[] args) {
+		Obj ret = Obj.getObj();
+	}
+}
+
+
+class Obj {
+	private Obj() {
+		
+	}
+	
+	
+//	创建对象、私有化
+	private Obj qh = new Obj();
+	
+	
+//	获取对象
+	
+	public static Obj getObj() {
+		return qh;
+	}
+	
+	
+	
+	
+	
+	
+}

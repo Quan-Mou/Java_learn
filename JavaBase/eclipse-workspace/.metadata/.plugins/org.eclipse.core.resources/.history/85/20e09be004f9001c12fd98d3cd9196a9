@@ -1,0 +1,104 @@
+package pers.quan.util;
+
+import java.util.*;
+/**
+ * 
+ * @Description 椤圭洰涓彁渚涗簡TSUtility.java绫伙紝鍙敤鏉ユ柟渚垮湴瀹炵幇閿洏璁块棶銆�
+ * @author shkstart  Email:shkstart@126.com
+ * @version 
+ * @date 2019骞�2鏈�12鏃ヤ笂鍗�12:02:58
+ *
+ */
+public class TSUtility {
+    private static Scanner scanner = new Scanner(System.in);
+    /**
+     * 
+     * @Description 璇ユ柟娉曡鍙栭敭鐩橈紝濡傛灉鐢ㄦ埛閿叆鈥�1鈥�-鈥�4鈥欎腑鐨勪换鎰忓瓧绗︼紝鍒欐柟娉曡繑鍥炪�傝繑鍥炲�间负鐢ㄦ埛閿叆瀛楃銆�
+     * @author shkstart
+     * @date 2019骞�2鏈�12鏃ヤ笂鍗�12:03:30
+     * @return
+     */
+	public static char readMenuSelection() {
+        char c;
+        for (; ; ) {
+            String str = readKeyBoard(1, false);
+            c = str.charAt(0);
+            if (c != '1' && c != '2' &&
+                c != '3' && c != '4') {
+                System.out.print("閫夋嫨閿欒锛岃閲嶆柊杈撳叆锛�");
+            } else break;
+        }
+        return c;
+    }
+	/**
+	 * 
+	 * @Description 璇ユ柟娉曟彁绀哄苟绛夊緟锛岀洿鍒扮敤鎴锋寜鍥炶溅閿悗杩斿洖銆�
+	 * @author shkstart
+	 * @date 2019骞�2鏈�12鏃ヤ笂鍗�12:03:50
+	 */
+    public static void readReturn() {
+        System.out.print("鎸夊洖杞﹂敭缁х画...");
+        readKeyBoard(100, true);
+    }
+    /**
+     * 
+     * @Description 璇ユ柟娉曚粠閿洏璇诲彇涓�涓暱搴︿笉瓒呰繃2浣嶇殑鏁存暟锛屽苟灏嗗叾浣滀负鏂规硶鐨勮繑鍥炲�笺��
+     * @author shkstart
+     * @date 2019骞�2鏈�12鏃ヤ笂鍗�12:04:04
+     * @return
+     */
+    public static int readInt() {
+        int n;
+        for (; ; ) {
+            String str = readKeyBoard(2, false);
+            try {
+                n = Integer.parseInt(str);
+                break;
+            } catch (NumberFormatException e) {
+                System.out.print("鏁板瓧杈撳叆閿欒锛岃閲嶆柊杈撳叆锛�");
+            }
+        }
+        return n;
+    }
+    /**
+     * 
+     * @Description 浠庨敭鐩樿鍙栤�榊鈥欐垨鈥橬鈥欙紝骞跺皢鍏朵綔涓烘柟娉曠殑杩斿洖鍊笺��
+     * @author shkstart
+     * @date 2019骞�2鏈�12鏃ヤ笂鍗�12:04:45
+     * @return
+     */
+    public static char readConfirmSelection() {
+        char c;
+        for (; ; ) {
+            String str = readKeyBoard(1, false).toUpperCase();
+            c = str.charAt(0);
+            if (c == 'Y' || c == 'N') {
+                break;
+            } else {
+                System.out.print("閫夋嫨閿欒锛岃閲嶆柊杈撳叆锛�");
+            }
+        }
+        return c;
+    }
+
+    private static String readKeyBoard(int limit, boolean blankReturn) {
+        String line = "";
+
+        while (scanner.hasNextLine()) {
+            line = scanner.nextLine();
+            if (line.length() == 0) {
+                if (blankReturn) return line;
+                else continue;
+            }
+
+            if (line.length() < 1 || line.length() > limit) {
+                System.out.print("杈撳叆闀垮害锛堜笉澶т簬" + limit + "锛夐敊璇紝璇烽噸鏂拌緭鍏ワ細");
+                continue;
+            }
+            break;
+        }
+
+        return line;
+    }
+}
+

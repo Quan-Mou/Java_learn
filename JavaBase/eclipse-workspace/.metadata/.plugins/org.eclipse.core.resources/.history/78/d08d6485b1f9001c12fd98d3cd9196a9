@@ -1,0 +1,6 @@
+package pers.quan.service;
+
+public class Status {
+	private final String NAME;
+	
+}

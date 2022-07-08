@@ -1,0 +1,28 @@
+package pers.quan.domain;
+
+public interface Equipment {
+	String Description = "";
+	public default String getDescription(String Description) {
+		return Description;
+	}
+}
+
+/*
+ * model:型号
+ * display:显示器名称
+ * type 表示机器的类型
+ */
+
+
+class Pc {
+	private String model; 
+	private String display;
+}
+
+class NeteBook {
+	private String model;
+}
+
+class Printer {
+	private String model;
+}

@@ -1,0 +1,6 @@
+package pers.quan.domain;
+
+// ≥Ã–Ú‘±
+public class Programmer extends Employee {
+
+}

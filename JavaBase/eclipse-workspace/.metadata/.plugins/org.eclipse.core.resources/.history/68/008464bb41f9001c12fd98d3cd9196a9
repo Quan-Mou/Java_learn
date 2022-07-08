@@ -1,0 +1,9 @@
+package pers.quan.domain;
+
+// ≥Ã–Ú‘±
+public class Programmer extends Employee {
+	private int memberId;
+	private Status status;
+	private Equipment equipment;
+	
+}

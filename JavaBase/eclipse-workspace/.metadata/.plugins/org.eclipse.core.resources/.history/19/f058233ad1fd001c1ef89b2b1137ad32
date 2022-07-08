@@ -1,0 +1,147 @@
+package pers.quan.service;
+
+import java.util.Arrays;
+
+import pers.quan.customException.TeamException;
+import pers.quan.domain.Architect;
+import pers.quan.domain.Designer;
+import pers.quan.domain.Employee;
+import pers.quan.domain.Programmer;
+import pers.quan.util.Data;
+import pers.quan.util.TSUtility;
+import pers.quan.service.*;
+
+public class TeamService {
+	private  int counter = 0; // 开发团队唯一ID
+	final int MAX_MEMBER = 5; // 开发团队最大成员数
+	Programmer[] team = new Programmer[ MAX_MEMBER]; //当前团队中的各成员对象
+	private int total = 0; // 记录团队成员的实际人数
+	
+	
+	// 返回当前开发团队的所有对象
+	public Programmer[] getTeam() {
+		Programmer[] team = new Programmer[total];
+		for(int i = 0;i<total;i++) {
+			this.team[i] = team[i]; 
+		}
+		return this.team;
+	}
+	
+	// 添加成員
+	public void addMember(Employee e) throws TeamException{
+		
+		if (total>=MAX_MEMBER) {
+			throw new TeamException("成员已满，无法添加");
+		}
+		if (!(e instanceof Programmer)) {
+			throw new TeamException("该成员不是开发人员，无法添加");
+		}
+		
+		// 进入到这里说明，成员既没有满同时也是开发人员
+		
+		Programmer p = (Programmer)e;
+		
+		Programmer[] all = getTeam();
+		
+		
+//		那开发团队列表实际人数和新增的数据比较
+		for(int i = 0;i<total;i++) {
+			
+			if(all[i] == null) {
+				break;
+			}
+//			if ( all[i].getId() == p.getId()) {
+//				System.out.println("该成员已在团队中");
+//				return;
+//			}
+//			if (total == 0) {
+//				return;
+//			}
+			System.out.println("进入。" + i + "<" + total);
+		}
+		
+		if("VOCATION".equals(p.getStatus())) {
+			throw new TeamException("该成员正在休假，无法添加");
+		}
+
+//		if (e instanceof Architect) {
+//			System.out.println("添加的是架构师");
+//			jgs++;
+//		}else if (e instanceof Designer) {
+//			System.out.println("添加的是设计师");
+//			sjs++;
+//			
+//		} else  {
+//			System.out.println("添加的是程序员");
+//			cxy++;
+//		}
+//		
+		int jgs = 0,sjs = 0,cxy = 0;
+		for(int i =0;i<total;i++) {
+			if(e instanceof Architect) {
+				System.out.println("添加的是架构师");
+				jgs++;
+			}
+			else if (e instanceof Designer) {
+				System.out.println("添加的是设计师");
+				sjs++;
+			}
+			else {
+				System.out.println("添加的是程序员");
+				cxy++;
+			}
+		}
+		
+		if (jgs >= 1) {
+			throw new TeamException("团队中至多只能有一名架构师");
+		} else if (sjs >= 2) {
+			throw new TeamException("团队中至多只能有两名设计师");
+		} else if(cxy >= 3) {
+			throw new TeamException("团队中至多只能有三名程序员");
+		}
+		
+	
+		
+		p.setStatus(Status.BUSY); // 状态给为加入开发团队
+		p.setMemberId(counter++);
+		System.out.println(p);
+		team[total] = p;
+		total++;
+//		System.out.println(total);
+//		System.out.println(team[0]);
+		getTeam();
+		
+	}
+	
+	// 删除成员
+	public void removeMember(int memberId) throws TeamException{
+		for(int i = 0;i<total;i++) {
+			if (team[i].getMemberId() == memberId) {
+				team[i+1]=team[i];
+				team[total] = null;
+				return;
+			}
+		}
+		throw new TeamException("找不到指定memberId的员工，删除失败");
+	}
+
+	public  int getCounter() {
+		return counter;
+	}
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
+//	@Override
+//	public String toString() {
+//		return counter+"/" +;
+//	}
+	
+	
+	
+}

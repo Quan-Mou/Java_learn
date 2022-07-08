@@ -1,0 +1,19 @@
+package pers.quan.opp.test3;
+
+public class BlockTest {
+
+}
+
+class Person {
+	int age;
+	String name;
+	
+	static {
+		System.out.println("static ´úÂë¿é1");
+	}
+	
+	{
+		System.out.println("·Çstatic ´úÂë¿é1");
+	}
+	
+}

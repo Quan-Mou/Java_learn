@@ -1,0 +1,19 @@
+package pres.quan.opp;
+
+public class OverLoad {
+	public static void main(String [] args) {
+		
+	}
+}
+
+class OverLoadTest {
+	public void mOL(int x, int y,String str) {
+		
+	}
+public void mOL(int x, String str,int y) {
+		
+	}
+public void mOL(String str , int x , int y) {
+	
+}
+}

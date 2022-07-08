@@ -1,0 +1,13 @@
+package pers.quan.domain;
+
+import java.io.ObjectInputFilter.Status;
+
+// 程序员
+public class Programmer extends Employee {
+	private int memberId; // 加入开发团队后在团队中的id
+	private Status status; // 自定义类下的对象属性（表示状态）
+	private Equipment equipment; // 
+	public Programmer(int id, String name, int age, double salary) {
+		super(id, name, age, salary);
+	}
+}

@@ -1,0 +1,7 @@
+package pers.quan.domain;
+
+
+// ¼Ü¹¹Ê¦
+public class Architect extends Programmer{
+                                                                                                                                                                                                                                                                                                                                                                                                                              
+}

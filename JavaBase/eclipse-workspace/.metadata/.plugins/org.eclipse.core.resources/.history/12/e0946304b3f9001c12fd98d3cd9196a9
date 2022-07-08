@@ -1,0 +1,11 @@
+package pers.quan.service;
+
+public class Status {
+	private final String NAME;
+	public Status(String NAME) {
+		this.NAME = NAME;
+	}
+	public static final Status FREE = new Status("FREE"); // 表示空闲
+	public static final Status BUSY = new Status("BUSY"); // 表示已加入开发团队
+	public static final Status VOCATION = new Status("VOCATION"); // 表示正在休假
+}

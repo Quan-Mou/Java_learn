@@ -1,0 +1,30 @@
+package pers.quan.opp.test3;
+
+public class SingletonTest2 {
+	
+	
+	
+
+}
+
+//懒汉式单例模式
+
+class TowDemo {
+	
+	
+	private TowDemo obj = null;  // 也可以不赋值，因为成员变量有默认值。
+	
+	private TowDemo() {
+		
+	}
+	
+	public TowDemo getTowDemo() {
+		if(obj  == null) {
+			obj = new TowDemo();
+		} 
+		return obj;
+	}
+	
+	
+	
+}

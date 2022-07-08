@@ -1,0 +1,12 @@
+package pers.quan.domain;
+
+
+// 设计师
+public class Designer extends Programmer {
+	private double bonus; // 表示奖金
+	
+	
+	public Designer(int id, String name, int age, double salary,Equipment equipment,double bonus) {
+		super(id, name, age, salary);
+	} 
+}

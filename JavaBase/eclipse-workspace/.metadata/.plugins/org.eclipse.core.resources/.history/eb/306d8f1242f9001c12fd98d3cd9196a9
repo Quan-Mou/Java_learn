@@ -1,0 +1,7 @@
+package pers.quan.domain;
+
+
+// …Ëº∆ ¶
+public class Designer extends Programmer {
+
+}

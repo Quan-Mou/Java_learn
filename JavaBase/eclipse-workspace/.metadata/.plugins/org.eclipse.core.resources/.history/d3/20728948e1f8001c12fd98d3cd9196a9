@@ -1,0 +1,47 @@
+package pers.quan.exception;
+
+public class ExceptionTest {
+	public static void main(String[] args) {
+		try {
+			int[] arr = new int[2];
+			System.out.println(arr[2]);
+			
+		}catch(IndexOutOfBoundsException e) {
+			System.out.println("越界访问");
+			System.out.println(e);
+		}catch(NullPointerException e) {
+			System.out.println("空指针");
+		}finally {
+			System.out.println("关闭");
+		}
+		
+		System.out.println("结果");
+		
+		System.out.println("*************");
+		
+		int ret = methods();
+		System.out.println(ret);
+		
+	}
+	static public int methods() {
+		try {
+			int a = 10 / 0;
+			return 1;
+		}catch(ArithmeticException e) {
+			System.out.println(e);
+			return 2;
+		}finally {
+			System.out.println("hhh");
+			return 3;
+		}
+		
+	}
+
+}
+
+
+
+
+class Person {
+	
+}

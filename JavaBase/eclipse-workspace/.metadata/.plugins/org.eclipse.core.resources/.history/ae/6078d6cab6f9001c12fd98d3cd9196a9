@@ -1,0 +1,10 @@
+package pers.quan.domain;
+
+
+// ¼Ü¹¹Ê¦
+public class Architect extends Programmer{
+	public Architect(int id, String name, int age, double salary) {
+		super(id, name, age, salary);
+		// TODO Auto-generated constructor stub
+	}                                                                                                                                                                                                                                                                                                                                                                                                                 
+}

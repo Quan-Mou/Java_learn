@@ -1,0 +1,48 @@
+package pres.quan.opp;
+
+public class OverLoad {
+	public static void main(String [] args) {
+		OverLoadTest oL = new OverLoadTest();
+		
+		oL.mOL(10);
+		oL.mOL(33,3);
+		oL.mOL("Hello");
+		
+		
+		System.out.println(oL.max(10, 14));
+		System.out.println(oL.max(3.14, 2.59));
+		System.out.println(oL.max(15.45, 34.2,188.88));
+	}
+}
+
+class OverLoadTest {
+	public void mOL(int x) {
+		System.out.println(x * x);
+	}
+	public void mOL(int x, int y) {
+		System.out.println(x * y );
+	}
+	public void mOL(String str) {
+		System.out.println(str);
+	}
+	
+	public int max(int x ,int y) {
+		int max = (x > y) ? x : y; 
+		return max;
+	}
+	public double max(double x, double y) {
+		double max = (x > y) ? x : y; 
+		return max;
+	}
+	public double max(double x , double y ,double z) {
+		double max;
+		if (x > y && x > z) {
+			max = x;
+		}else if (y > x && y > z) {
+			max = y;
+		} else {
+			max = z;
+		}
+		return max;
+	}
+}
