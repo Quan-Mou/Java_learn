@@ -44,10 +44,10 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ThreadSet2">
-    <configuration name="ThreadExer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.quan.exer.ThreadExer" />
-      <module name="day17" />
+  <component name="RunManager" selected="Application.Communication">
+    <configuration name="AccountTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.quan.exer.AccountTest" />
+      <module name="thread18" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pers.quan.exer.*" />
@@ -58,38 +58,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadSet1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.quan.java.ThreadSet1" />
-      <module name="day17" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pers.quan.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadSet2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.quan.java.ThreadSet2" />
-      <module name="day17" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pers.quan.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ticket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.quan.exer.Ticket" />
-      <module name="day17" />
+    <configuration name="Communication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.quan.exer.Communication" />
+      <module name="thread18" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pers.quan.exer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sync3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.quan.sync.Sync3" />
+      <module name="thread18" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.quan.sync.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SyncBlack2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.quan.sync.SyncBlack2" />
+      <module name="thread18" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.quan.sync.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SyncBlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.quan.sync.SyncBlock" />
+      <module name="thread18" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.quan.sync.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,7 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadSet2" />
+        <item itemvalue="Application.Communication" />
+        <item itemvalue="Application.AccountTest" />
+        <item itemvalue="Application.Sync3" />
+        <item itemvalue="Application.SyncBlack2" />
+        <item itemvalue="Application.SyncBlock" />
       </list>
     </recent_temporary>
   </component>
