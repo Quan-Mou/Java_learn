@@ -38,19 +38,29 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8 (2)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Communication">
-    <configuration name="AccountTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.quan.exer.AccountTest" />
-      <module name="thread18" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="object" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.GenericityTest.test1">
+    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.quan.collectionTest.ListTest" />
+      <module name="Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.quan.exer.*" />
+          <option name="PATTERN" value="pers.quan.collectionTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -58,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Communication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.quan.exer.Communication" />
-      <module name="thread18" />
+    <configuration name="TreeSetExer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.quan.collectionTest.TreeSetExer" />
+      <module name="Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.quan.exer.*" />
+          <option name="PATTERN" value="pers.quan.collectionTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,52 +81,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sync3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.quan.sync.Sync3" />
-      <module name="thread18" />
+    <configuration name="GenericityTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Genericity" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.quan.sync.*" />
+          <option name="PATTERN" value="pers.quan.genericity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="pers.quan.genericity" />
+      <option name="MAIN_CLASS_NAME" value="pers.quan.genericity.GenericityTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SyncBlack2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.quan.sync.SyncBlack2" />
-      <module name="thread18" />
+    <configuration name="MapTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.quan.sync.*" />
+          <option name="PATTERN" value="pers.quan.Map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="pers.quan.Map" />
+      <option name="MAIN_CLASS_NAME" value="pers.quan.Map.MapTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SyncBlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.quan.sync.SyncBlock" />
-      <module name="thread18" />
+    <configuration name="TreeSetExer.Exer2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.quan.sync.*" />
+          <option name="PATTERN" value="pers.quan.collectionTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="pers.quan.collectionTest" />
+      <option name="MAIN_CLASS_NAME" value="pers.quan.collectionTest.TreeSetExer" />
+      <option name="METHOD_NAME" value="Exer2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Communication" />
-        <item itemvalue="Application.AccountTest" />
-        <item itemvalue="Application.Sync3" />
-        <item itemvalue="Application.SyncBlack2" />
-        <item itemvalue="Application.SyncBlock" />
+        <item itemvalue="JUnit.GenericityTest.test1" />
+        <item itemvalue="JUnit.MapTest.test1" />
+        <item itemvalue="JUnit.TreeSetExer.Exer2" />
+        <item itemvalue="Application.TreeSetExer" />
+        <item itemvalue="Application.ListTest" />
       </list>
     </recent_temporary>
   </component>

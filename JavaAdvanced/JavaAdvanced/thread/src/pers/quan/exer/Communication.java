@@ -1,5 +1,7 @@
 package pers.quan.exer;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Communication {
 
     public static void main(String[] args) {
@@ -17,21 +19,42 @@ public class Communication {
 }
 
 class Show implements Runnable{
-    int num = 1;
+
+
+
+     int number = 1;
+
+
     @Override
     public void run() {
-           while (num <100){
-               synchronized (this) {
-               notify();
-               System.out.println(Thread.currentThread().getName() + ": " + num);
-               num++;
-                   try {
-                       wait();
-                   } catch (InterruptedException e) {
-                       throw new RuntimeException(e);
-                   }
-               }
-           }
+
+        while (true){
+            synchronized (this) {
+                notify();
+                if(number <= 100){
+//                    try {
+//                        Thread.sleep(10);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+                    System.out.println(Thread.currentThread().getName() + ":" + number);
+                    number++;
+                    try {
+                        //使得调用如下wait()方法的线程进入阻塞状态
+                        wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }else{
+                    break;
+                }
+            }
+        }
+
+
 
     }
+
+
 }

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Collection/Collection.iml" filepath="$PROJECT_DIR$/Collection/Collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DateTimeApi20/DateTimeApi20.iml" filepath="$PROJECT_DIR$/DateTimeApi20/DateTimeApi20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EnumSumNote21/EnumSumNote21.iml" filepath="$PROJECT_DIR$/EnumSumNote21/EnumSumNote21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Genericity/Genericity.iml" filepath="$PROJECT_DIR$/Genericity/Genericity.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaAdvanced.iml" filepath="$PROJECT_DIR$/JavaAdvanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringCommonApi19/StringCommonApi19.iml" filepath="$PROJECT_DIR$/StringCommonApi19/StringCommonApi19.iml" />
       <module fileurl="file://$PROJECT_DIR$/day17/day17.iml" filepath="$PROJECT_DIR$/day17/day17.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread/thread18.iml" filepath="$PROJECT_DIR$/thread/thread18.iml" />
     </modules>
